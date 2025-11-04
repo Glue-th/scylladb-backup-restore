@@ -1,0 +1,26 @@
+Thông tin version:
+
+scylla --version
+6.2.3-0.20250119.bff9ddde1283
+
+nodetool version
+ReleaseVersion: 3.0.8
+
+cqlsh 10.10.127.178 -e "SELECT release_version FROM system.local;"
+
+ release_version
+-----------------
+           3.0.8
+
+(1 rows)
+
+dpkg -l | grep scylla
+ii  scylla                             6.2.3-0.20250119.bff9ddde1283-1         arm64        Scylla database metapackage
+ii  scylla-conf                        6.2.3-0.20250119.bff9ddde1283-1         arm64        Scylla database main configuration file
+ii  scylla-cqlsh                       6.2.3-0.20250119.bff9ddde1283-1         arm64        cqlsh is a Python-based command-line client for running CQL commands on a cassandra cluster.
+ii  scylla-kernel-conf                 6.2.3-0.20250119.bff9ddde1283-1         arm64        Scylla kernel tuning configuration
+ii  scylla-node-exporter               6.2.3-0.20250119.bff9ddde1283-1         arm64        Prometheus exporter for machine metrics
+ii  scylla-python3                     6.2.3-0.20250119.bff9ddde1283-1         arm64        A standalone python3 interpreter that can be moved around different Linux machines
+ii  scylla-server                      6.2.3-0.20250119.bff9ddde1283-1         arm64        Scylla database server binaries
+ii  scylla-tools                       6.2.3-0.20250119.bff9ddde1283-1         all          Scylla database tools
+ii  scylla-tools-core                  6.2.3-0.20250119.bff9ddde1283-1         all          Scylla database tools core files
